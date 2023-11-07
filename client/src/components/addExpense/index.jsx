@@ -6,7 +6,7 @@ const AddExpense = () => {
 
 const { dispatch } = useContext(AppContext);
 const [name, setName] = useState('');
-const [cost, useCost] = useState('');
+const [cost, setCost] = useState('');
 
 const onSubmit = (event) => {
     e.preventDefault();
