@@ -8,11 +8,11 @@ const { dispatch } = useContext(AppContext);
 const [name, setName] = useState('');
 const [cost, setCost] = useState('');
 
-const onSubmit = (event) => {
+const onSubmit = (e) => {
     e.preventDefault();
     
     const expense = {
-        // id: uuidv4(),  this breaks my code
+        id: uuidv4(), 
         name: name,
         cost: parseInt(cost),
     };
@@ -21,6 +21,9 @@ const onSubmit = (event) => {
         type: 'ADD_EXPENSE',
         payload: expense,
     });
+
+    setName('');
+    setCost('');
 };
 
   return (

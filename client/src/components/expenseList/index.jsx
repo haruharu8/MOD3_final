@@ -22,7 +22,7 @@ const ExpenseList = () => {
 		<>
 			<input
 				type='text'
-				class='form-control mb-2 mr-sm-2'
+				class='form-control mb-2 mr-2'
 				placeholder='Type to search...'
 				onChange={handleChange}
 			/>
