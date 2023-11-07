@@ -5,11 +5,12 @@ import ExpenseItem from './components/expenseItem'
 import ExpenseList from './components/expenseList'
 import Remaining from './components/remaining'
 import Spent from './components/spent'
+import { AppProvider } from './context/appContext'
 
 function App() {
 
   return (
-    <>
+    <AppProvider>
       
         <h1 className="text-3xl font-bold underline">
         Free Budget Tracker 
@@ -32,15 +33,18 @@ function App() {
                     <ExpenseItem />
                   </div>
                 </div>
-
+                <h3 className= "text-3xl font-bold underline">Add Expense</h3>
+                <div className='mt-3'>
+                  <div className='col-span-1'>
+                    <AddExpense />
+                  </div>
+                </div>
                 <ExpenseList />
-                <AddExpense />
             </div>
           </div>
-          <h3 className= "text-3xl font-bold underline">Expense List</h3>
         </div>
       
-    </>
+    </AppProvider>
   )
 }
 
