@@ -12,7 +12,7 @@ const onSubmit = (event) => {
     e.preventDefault();
     
     const expense = {
-        // id: uuidv4(), 
+        // id: uuidv4(),  this breaks my code
         name: name,
         cost: parseInt(cost),
     };
@@ -31,8 +31,11 @@ const onSubmit = (event) => {
                     <label for='name'>Name</label>
                     <input 
                     required='required' 
-                    type='text' 
-                    className ='form-control'>  
+                    type='text'
+                    className ='form-control' 
+                    id='name'
+                    value={name}
+                    onChange={(event) => setName(event.target.value)}>
                     </input>
                 </div>
                 <div className='columns-1'>
