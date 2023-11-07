@@ -17,17 +17,17 @@ function App() {
         <div className='container'>
           <div className="flex-auto">
             <div className="m-3">
-              <div className="columns-1">
+              <div className="columns-1 mb-1">
                 <Budget />
               </div>
-              <div className="columns-1">
+              <div className="columns-1 mb-1">
                 <Remaining />
               </div>
-              <div className="columns-1">
+              <div className="columns-1 mb-1">
                 <Spent />
               </div>
                 <h3 className='mt-3'>Expenses</h3>
-                <div className='row mt-3'>
+                <div className='flex mt-3'>
                   <div className='columns-1'>
                     <ExpenseItem />
                   </div>
@@ -37,7 +37,7 @@ function App() {
                 <AddExpense />
             </div>
           </div>
-          <h3 className= "text-3xl font-bold underline">Expenses</h3>
+          <h3 className= "text-3xl font-bold underline">Expense List</h3>
         </div>
       
     </>

@@ -13,13 +13,13 @@ const ExpenseList = () => {
         }
     ]
   return (
-    <ul>
-        {expenses.map((expense) => {
+    <ul className='list'>
+        {expenses.map((expense) => (
             <ExpenseItem 
                 id={expense.id}
                 name={expense.name}
                 cost={expense.cost} />
-        })}
+        ))}
     </ul>
   )
 }
