@@ -12,7 +12,7 @@ const onSubmit = (event) => {
     e.preventDefault();
     
     const expense = {
-        id: uuidv4(),
+        // id: uuidv4(), 
         name: name,
         cost: parseInt(cost),
     };
@@ -47,9 +47,9 @@ const onSubmit = (event) => {
 					/>
                 </div>
                 <div>
-                    <buttom type='submit' className='btn-primary'>
+                    <button type='submit' className='btn-primary'>
                         Save
-                    </buttom>
+                    </button>
                 </div>
             </div>
         </form>
